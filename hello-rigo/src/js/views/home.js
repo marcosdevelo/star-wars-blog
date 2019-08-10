@@ -8,7 +8,9 @@ export class Home extends React.Component {
 	render() {
 		return (
 			<div className="text-center mt-5">
+				<h1>Characters</h1>
 				<Characters />
+				<h1>Planets</h1>
 				<Planets />
 			</div>
 		);
