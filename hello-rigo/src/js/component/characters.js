@@ -1,12 +1,15 @@
 import React from "react";
 import { Context } from "../store/appContext";
+
 const Characters = () => {
 	return (
 		<div className="container">
 			<div className="row">
 				<Context.Consumer>
 					{({ store, actions }) => {
+						console.log("characters", store.characters);
 						return store.characters.map((item, index) => {
+							console.log("llego people a character");
 							return (
 								<div key={index} className="card col-3">
 									<img src="http://placehold.it/400x200" className="card-img-top" alt="..." />

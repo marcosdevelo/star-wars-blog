@@ -1,5 +1,6 @@
 import React from "react";
 import getState from "./flux.js";
+import { log } from "../utils";
 
 // Don't change, here is where we initialize our context, by default its just going to be Null.
 export const Context = React.createContext(null);
@@ -22,11 +23,7 @@ const injectContext = PassedComponent => {
 		}
 
 		componentDidMount() {
-			/**
-			 * EDIT THIS!
-			 * This function is the equivalent to "window.onLoad", it only run once on the entire application lifetime
-			 * you should do your ajax requests or fetch api requests here
-			 **/
+			this.state.actions.getCharacters();
 		}
 
 		render() {
