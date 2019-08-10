@@ -5,5 +5,11 @@ img{
         width: 70px;
 }
 .container{
-    display: flex;
+    overflow: scroll;
+}
+
+.card-deck{
+        display: flex;
+
+    width: 2000px;
 }

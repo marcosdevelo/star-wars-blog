@@ -3,15 +3,13 @@ import { Context } from "../store/appContext";
 
 const Characters = () => {
 	return (
-		<div className="container">
-			<div className="row">
+		<div className="container ">
+			<div className="card-deck ">
 				<Context.Consumer>
 					{({ store, actions }) => {
-						console.log("characters", store.characters);
 						return store.characters.map((item, index) => {
-							console.log("llego people a character");
 							return (
-								<div key={index} className="card col-3">
+								<div key={index} className="card">
 									<img src="http://placehold.it/400x200" className="card-img-top" alt="..." />
 									<div className="card-body">
 										<h5 className="card-title">{item.name}</h5>
