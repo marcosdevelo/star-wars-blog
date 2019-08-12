@@ -24,6 +24,7 @@ const injectContext = PassedComponent => {
 
 		componentDidMount() {
 			this.state.actions.getCharacters();
+			this.state.actions.getPlanets();
 		}
 
 		render() {

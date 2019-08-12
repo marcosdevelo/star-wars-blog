@@ -6,15 +6,16 @@ const Planets = () => {
 			<div className="card-deck">
 				<Context.Consumer>
 					{({ store, actions }) => {
-						return store.characters.map((item, index) => {
+						return store.planets.map((item, index) => {
 							return (
 								<div key={index} className="card">
 									<img src="http://placehold.it/400x200" className="card-img-top" alt="..." />
 									<div className="card-body">
 										<h5 className="card-title">{item.name}</h5>
 										<p className="card-text">
-											This is a wider card with supporting text below as a natural lead-in to
-											additional content. This content is a little bit longer.
+											Population:
+											{item.population} Terrain:
+											{item.terrain}
 										</p>
 
 										<button type="button" className="btn btn-outline-primary">
