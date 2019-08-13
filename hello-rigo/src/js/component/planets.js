@@ -1,5 +1,6 @@
 import React from "react";
 import { Context } from "../store/appContext";
+import { Link } from "react-router-dom";
 const Planets = () => {
 	return (
 		<div className="container">
@@ -21,6 +22,7 @@ const Planets = () => {
 										<button type="button" className="btn btn-outline-primary">
 											Learn More!
 										</button>
+
 										<button type="button" className="btn btn-outline-info">
 											<i className="far fa-heart" />
 										</button>

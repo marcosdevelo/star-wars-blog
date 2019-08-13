@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 
 const Characters = () => {
@@ -19,10 +20,11 @@ const Characters = () => {
 											{item.hair_color} Eye Color:
 											{item.eye_color}
 										</p>
-
-										<button type="button" className="btn btn-outline-primary">
-											Learn More!
-										</button>
+										<Link to="/demo">
+											<button type="button" className="btn btn-outline-primary">
+												Learn More!
+											</button>
+										</Link>
 										<button type="button" className="btn btn-outline-info">
 											<i className="far fa-heart" />
 										</button>

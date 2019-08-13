@@ -12,7 +12,7 @@ export class Demo extends React.Component {
 				<ul className="list-group">
 					<Context.Consumer>
 						{({ store, actions }) => {
-							return store.demo.map((item, index) => {
+							return store.characters.map((item, index) => {
 								return (
 									<li
 										key={index}
