@@ -18,11 +18,11 @@ const Planets = () => {
 											{item.population} Terrain:
 											{item.terrain}
 										</p>
-
-										<button type="button" className="btn btn-outline-primary">
-											Learn More!
-										</button>
-
+										<Link to={"/single-planets/" + item.name + "/" + index}>
+											<button type="button" className="btn btn-outline-primary">
+												Learn More!
+											</button>
+										</Link>
 										<button type="button" className="btn btn-outline-info">
 											<i className="far fa-heart" />
 										</button>

@@ -20,7 +20,7 @@ const Characters = () => {
 											{item.hair_color} Eye Color:
 											{item.eye_color}
 										</p>
-										<Link to="/demo">
+										<Link to={"/single-people/" + item.name + "/" + index}>
 											<button type="button" className="btn btn-outline-primary">
 												Learn More!
 											</button>
