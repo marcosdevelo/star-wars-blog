@@ -6,7 +6,7 @@ export class SinglePeople extends React.Component {
 		//console.log(this.props.match.params.myId);
 		return (
 			<React.Fragment>
-				<div className="container">
+				<div className="container-fluid">
 					<div className="row">
 						<Context.Consumer>
 							{({ store }) => {
@@ -17,7 +17,7 @@ export class SinglePeople extends React.Component {
 										</div>
 										<div className="col-6">
 											<h1>{store.characters[this.props.match.params.myId].name}</h1>
-											<p>
+											<span>
 												Lorem Ipsum is simply dummy text of the printing and typesetting
 												industry. Lorem Ipsum has been the industrys standard dummy text ever
 												since the 1500s, when an unknown printer took a galley of type and
@@ -30,7 +30,7 @@ export class SinglePeople extends React.Component {
 												galley of type and scrambled it to make a type specimen book. It has
 												survived not only five centuries, but also the leap into electronic
 												typesetting, remaining essentially unchanged.
-											</p>
+											</span>
 										</div>
 										<div className="row mt-5 container-fluid">
 											<div className="col-2">

@@ -12,7 +12,7 @@ const Characters = () => {
 							return store.characters.map((item, index) => {
 								return (
 									<div key={index} className="card">
-										<img src="http://placehold.it/400x200" className="card-img-top" alt="..." />
+										<img src="http://placehold.it/400x200" className="card-img-top1" alt="..." />
 										<div className="card-body">
 											<h5 className="card-title">{item.name}</h5>
 											<p className="card-text">
