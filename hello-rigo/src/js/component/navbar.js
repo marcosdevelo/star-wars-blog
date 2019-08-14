@@ -28,17 +28,27 @@ export class Navbar extends React.Component {
 
 				<div className="ml-auto">
 					<Dropdown direction="down" isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-						<DropdownToggle caret>Favorite</DropdownToggle>
+						<Context.Consumer>
+							{({ store }) => {
+								return (
+									<React.Fragment>
+										<DropdownToggle caret>
+											Favorite
+											{" " + store.favorite.length}
+										</DropdownToggle>
+									</React.Fragment>
+								);
+							}}
+						</Context.Consumer>
+
 						<DropdownMenu>
 							<Context.Consumer>
 								{({ store, actions }) => {
 									return store.favorite.map((item, index) => {
 										return (
-											<DropdownItem key={index} header>
+											<DropdownItem key={index}>
 												<span>{item.name}</span>
-												<button
-													className="float-right"
-													onClick={() => actions.removeFavorites(item, index)}>
+												<button onClick={() => actions.removeFavorites(item, index)}>
 													<i className="fas fa-trash-alt" />
 												</button>
 											</DropdownItem>

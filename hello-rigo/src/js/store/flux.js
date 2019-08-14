@@ -65,8 +65,16 @@ const getState = ({ getStore, setStore }) => {
 						 **/
 					});
 			},
-			markAsFactorite: elementId => {},
-			removeFavorites: elementId => {},
+
+			markAsFavorite: (elementId, name) => {
+				const store = getStore();
+				setStore({ favorite: store.favorite.concat({ index: elementId, name: name }) });
+				//console.log("Index:", elementId);
+			},
+			removeFavorites: (elementId, index) => {
+				const store = getStore();
+				setStore({ favorite: store.favorite.filter((item, i) => i !== index) });
+			},
 
 			changeColor: (index, color) => {}
 

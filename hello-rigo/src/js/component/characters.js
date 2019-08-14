@@ -25,7 +25,10 @@ const Characters = () => {
 												Learn More!
 											</button>
 										</Link>
-										<button type="button" className="btn btn-outline-info">
+										<button
+											onClick={() => actions.markAsFavorite(index, item.name)}
+											type="button"
+											className="btn btn-outline-info">
 											<i className="far fa-heart" />
 										</button>
 									</div>
