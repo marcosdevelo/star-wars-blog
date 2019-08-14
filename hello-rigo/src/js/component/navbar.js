@@ -32,7 +32,7 @@ export class Navbar extends React.Component {
 							{({ store }) => {
 								return (
 									<React.Fragment>
-										<DropdownToggle caret>
+										<DropdownToggle caret color="primary">
 											Favorite
 											{" " + store.favorite.length}
 										</DropdownToggle>
