@@ -16,10 +16,22 @@ const Characters = () => {
 										<div className="card-body">
 											<h5 className="card-title">{item.name}</h5>
 											<p className="card-text">
-												Gender:
-												{item.gender} Hair Color:
-												{item.hair_color} Eye Color:
-												{item.eye_color}
+												<ul>
+													<li>
+														Gender:
+														{item.gender}
+													</li>
+													<li>
+														{" "}
+														Hair Color:
+														{item.hair_color}
+													</li>
+													<li>
+														{" "}
+														Eye Color:
+														{item.eye_color}
+													</li>
+												</ul>
 											</p>
 											<Link to={"/single-people/" + item.name + "/" + index}>
 												<button type="button" className="btn btn-outline-primary ">

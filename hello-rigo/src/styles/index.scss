@@ -14,7 +14,7 @@ img{
 .card-deck{
         display: flex;
      margin-bottom: 20px;
-           width: 3629px;
+           width: 3829px;
 
 }
 
@@ -24,10 +24,7 @@ h1{
             padding-bottom: 26px;
     margin-right: 886px;
 }
-p{
-   ;
 
-}
 
 .card-img-top {
     width: 70%;
@@ -60,4 +57,8 @@ p{
     .far fa-heart{
 
         margin-left: 200px;
+    }
+    ul{
+        list-style-type:  none;
+        padding: 0px;
     }
