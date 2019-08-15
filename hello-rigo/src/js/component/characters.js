@@ -22,14 +22,14 @@ const Characters = () => {
 												{item.eye_color}
 											</p>
 											<Link to={"/single-people/" + item.name + "/" + index}>
-												<button type="button" className="btn btn-outline-primary">
+												<button type="button" className="btn btn-outline-primary ">
 													Learn More!
 												</button>
 											</Link>
 											<button
 												onClick={() => actions.markAsFavorite(index, item.name)}
 												type="button"
-												className="btn btn-outline-info">
+												className="btn btn-outline-info float-right mr-3">
 												<i className="far fa-heart" />
 											</button>
 										</div>

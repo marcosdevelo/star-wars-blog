@@ -5,7 +5,7 @@ img{
         width: 70px;
 }
 .container{
-    overflow: scroll;
+    overflow-y: scroll;
     margin-right: 0px;
         max-width: 1237px;
         margin-left: 131px;
@@ -14,7 +14,7 @@ img{
 .card-deck{
         display: flex;
      margin-bottom: 20px;
-       width: 4295px;
+           width: 3629px;
 
 }
 
@@ -25,8 +25,8 @@ h1{
     margin-right: 886px;
 }
 p{
-    width: 123px;
-        margin: auto;
+   ;
+
 }
 
 .card-img-top {
@@ -39,7 +39,9 @@ p{
 
     .card-deck .card {
     margin-bottom: 0px;
-    height: 382px;}
+    height: 360px;
+    text-align: left;
+    }
 
 .ml-auto{
         margin-right: 130px;
@@ -51,3 +53,11 @@ p{
    .mt-5, .my-5 {
     margin-top: 1rem !important;
 }
+.card-title {
+
+    text-align: left;}
+
+    .far fa-heart{
+
+        margin-left: 200px;
+    }
