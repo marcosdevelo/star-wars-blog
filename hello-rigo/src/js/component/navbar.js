@@ -22,7 +22,7 @@ export class Navbar extends React.Component {
 			<nav className="navbar navbar-light bg-light mb-3">
 				<Link to="/">
 					<span className="navbar-brand mb-0 h1">
-						<img src="https://www.vectorlogo.es/wp-content/uploads/2019/04/logo-vector-star-wars.jpg" />
+						<img src="https://cdn.iconscout.com/icon/free/png-256/starwars-5-555964.png" />
 					</span>
 				</Link>
 
