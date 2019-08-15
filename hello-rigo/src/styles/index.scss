@@ -36,7 +36,7 @@ h1{
 
     .card-deck .card {
     margin-bottom: 0px;
-    height: 360px;
+    height: 373px;
     text-align: left;
     }
 
@@ -49,6 +49,7 @@ h1{
 }
    .mt-5, .my-5 {
     margin-top: 1rem !important;
+
 }
 .card-title {
 
@@ -62,3 +63,9 @@ h1{
         list-style-type:  none;
         padding: 0px;
     }
+.mt-3{
+
+    border-top: red solid 1px;
+margin-left: 192px;
+    width: 1000px;
+}

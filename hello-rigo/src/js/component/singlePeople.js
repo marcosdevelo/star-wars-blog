@@ -16,7 +16,7 @@ export class SinglePeople extends React.Component {
 											<img src="http://placehold.it/800x600" className="card-img-top" />
 										</div>
 										<div className="col-6">
-											<h1>{store.characters[this.props.match.params.myId].name}</h1>
+											<h2>{store.characters[this.props.match.params.myId].name}</h2>
 											<span>
 												Lorem Ipsum is simply dummy text of the printing and typesetting
 												industry. Lorem Ipsum has been the industrys standard dummy text ever
@@ -32,7 +32,7 @@ export class SinglePeople extends React.Component {
 												typesetting, remaining essentially unchanged.
 											</span>
 										</div>
-										<div className="row mt-5 container-fluid">
+										<div className="row mt-3 container-fluid border-top: red solid 1px">
 											<div className="col-2">
 												<div className="text-danger mb-2">
 													<strong>Name</strong>

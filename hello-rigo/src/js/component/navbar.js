@@ -48,7 +48,9 @@ export class Navbar extends React.Component {
 										return (
 											<DropdownItem key={index}>
 												<span>{item.name}</span>
-												<button onClick={() => actions.removeFavorites(item, index)}>
+												<button
+													className="ml-3"
+													onClick={() => actions.removeFavorites(item, index)}>
 													<i className="fas fa-trash-alt" />
 												</button>
 											</DropdownItem>

@@ -34,7 +34,7 @@ const Planets = () => {
 										<button
 											onClick={() => actions.markAsFavorite(index, item.name)}
 											type="button"
-											className="btn btn-outline-info">
+											className="btn btn-outline-info float-right">
 											<i className="far fa-heart" />
 										</button>
 									</div>

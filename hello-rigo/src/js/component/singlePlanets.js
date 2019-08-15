@@ -43,42 +43,42 @@ export class SinglePlanets extends React.Component {
 											</div>
 											<div className="col-2">
 												<div className="text-danger mb-2">
-													<strong>Birth Year</strong>
+													<strong>Climate</strong>
 												</div>
 												<div className="text-danger">
-													{store.planets[this.props.match.params.myId].birth_year}
+													{store.planets[this.props.match.params.myId].climate}
 												</div>
 											</div>
 											<div className="col-2">
 												<div className="text-danger mb-2">
-													<strong>Gender</strong>
+													<strong>Population</strong>
 												</div>
 												<div className="text-danger">
-													{store.planets[this.props.match.params.myId].gender}
+													{store.planets[this.props.match.params.myId].population}
 												</div>
 											</div>
 											<div className="col-2">
 												<div className="text-danger mb-2">
-													<strong>Height</strong>
+													<strong>Orbital Period</strong>
 												</div>
 												<div className="text-danger">
-													{store.planets[this.props.match.params.myId].height}
+													{store.planets[this.props.match.params.myId].orbital_period}
 												</div>
 											</div>
 											<div className="col-2">
 												<div className="text-danger mb-2">
-													<strong>Skin Color</strong>
+													<strong>Rotation Period</strong>
 												</div>
 												<div className="text-danger">
-													{store.planets[this.props.match.params.myId].skin_color}
+													{store.planets[this.props.match.params.myId].rotation_period}
 												</div>
 											</div>
 											<div className="col-2">
 												<div className="text-danger mb-2">
-													<strong>Eye Color</strong>
+													<strong>Diameter</strong>
 												</div>
 												<div className="text-danger">
-													{store.planets[this.props.match.params.myId].eye_color}
+													{store.planets[this.props.match.params.myId].diameter}
 												</div>
 											</div>
 										</div>
