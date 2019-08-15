@@ -26,13 +26,13 @@ export class Navbar extends React.Component {
 					</span>
 				</Link>
 
-				<div className="ml-auto">
+				<div className="buttonTwo">
 					<Dropdown direction="down" isOpen={this.state.dropdownOpen} toggle={this.toggle}>
 						<Context.Consumer>
 							{({ store }) => {
 								return (
 									<React.Fragment>
-										<DropdownToggle caret color="primary">
+										<DropdownToggle caret color="primary" size="lg">
 											Favorite
 											{" " + store.favorite.length}
 										</DropdownToggle>
