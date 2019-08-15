@@ -7,18 +7,22 @@ img{
 .container{
     overflow: scroll;
     margin-right: 0px;
+        max-width: 1237px;
+        margin-left: 131px;
 }
 
 .card-deck{
         display: flex;
-
+     margin-bottom: 20px;
        width: 4295px;
 
 }
 
 h1{
     color:#d72d2d;
-        padding: 26px;
+    padding-top: 21px;
+            padding-bottom: 26px;
+    margin-right: 886px;
 }
 p{
     width: 123px;
@@ -34,8 +38,16 @@ p{
     }
 
     .card-deck .card {
-margin-bottom: 0px;}
+    margin-bottom: 0px;
+    height: 382px;}
 
 .ml-auto{
-    margin-left: 20px;
+        margin-right: 130px;
+}
+.navbar-light .navbar-brand {
+
+    margin-left: 140px;
+}
+   .mt-5, .my-5 {
+    margin-top: 1rem !important;
 }
